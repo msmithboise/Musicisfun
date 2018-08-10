@@ -4,14 +4,13 @@ import ItunesService from "./itunes-service.js";  //imported new Song/songList
 
 const itunesService = new ItunesService()
 
-function drawSongs(results) {
+function drawSongs(songList) {
   
-let songs = itunesService.getMusicByArtist(artist)
 
 let template = ''
 
-for (let i = 0; i < songs.length; i++) {
-  const song = songs[i];
+for (let i = 0; i < songList.length; i++) {
+  let song = songList[i];
   template +=
 
   `
@@ -30,13 +29,13 @@ for (let i = 0; i < songs.length; i++) {
 }
 document.getElementById('songs').innerHTML = template
 }
+// console.log(songList)
   
   
   
   
   
   
-// console.log(results)
   //YOUR CODING STARTS HERE
 // string template
 //get element by id
