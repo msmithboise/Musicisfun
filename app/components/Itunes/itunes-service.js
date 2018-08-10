@@ -1,4 +1,4 @@
-import Song from "../../models/Song.js";
+import Song from "../../models/Song.js"; //imported Song
 
 
 class ItunesService {
@@ -9,15 +9,17 @@ class ItunesService {
     //Casts each object to 
     return $.getJSON(url).then(function (response) {
       var songList = response.results.map(s => {
-        return new Song(s)
+        return new Song(s)  //new Song returned as songList
       })
       return songList;
     })
   }
 
 
+
+
 }
 
 
 
-export default ItunesService
+export default ItunesService //exported new Song/songList
