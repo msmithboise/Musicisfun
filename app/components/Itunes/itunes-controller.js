@@ -5,7 +5,7 @@ import ItunesService from "./itunes-service.js";  //imported new Song/songList
 const itunesService = new ItunesService()
 
 function drawSongs(songList) {
-  
+  console.log(songList)
 
 let template = ''
 
@@ -15,15 +15,21 @@ for (let i = 0; i < songList.length; i++) {
 
   `
   <div>
-    <p><b>Artist:</b> ${song.artistName}</p>
-    <p><b>Track:</b> ${song.trackName}</p>
-    <p><b>Album:</b> ${song.collectionName}</p>
-    <p><b>Price:</b> ${song.collectionPrice}</p>
-    <p><b>Preview:</b> ${song.previewUrl}</p>
+    <p><b>Artist:</b> ${song.artist}</p>
+    <p><b>Track:</b> ${song.title}</p>
+    <p><b>Album:</b> ${song.collection}</p>
+    <p><b>Price:</b> ${song.price}</p>
     <img class="url" src="${song.albumArt}" alt="">
-
-</div>
-
+    // <audio controls></audio><audio url="${song.preview}"></audio>
+    
+    <audio controls>
+    <source src="${song.preview}" type="audio/ogg">
+   
+  </audio>
+    
+    
+    </div>
+    
   `
   
 }
