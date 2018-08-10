@@ -14,20 +14,27 @@ function drawSongs(songList) {
     template +=
 
       `
-  <div>
-    <p><b>Artist:</b> ${song.artist}</p>
-    <p><b>Track:</b> ${song.title}</p>
-    <p><b>Album:</b> ${song.collection}</p>
-    <p><b>Price:</b> ${song.price}</p>
-    <img class="url" src="${song.albumArt}" alt="">
-  
-    <audio controls>
-    <source src="${song.preview}" type="audio/ogg">
-   
-  </audio>
-    
-    
-    </div>
+      <div class="wrapper col-3">
+
+      <div class="row scrolls">
+      
+          <p>
+              <b>Artist:</b> ${song.artist}</p>
+          <p>
+              <b>Track:</b> ${song.title}</p>
+          <p>
+              <b>Album:</b> ${song.collection}</p>
+          <p>
+              <b>Price:</b> ${song.price}</p>
+          <img class="url" src="${song.albumArt}" alt="">
+
+          <audio controls class="mt-5">
+              <source  src="${song.preview}" type="audio/ogg">
+
+          </audio>
+      </div>
+
+  </div>
     
   `
 

@@ -6,36 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container-fluid hero-image" style="background-color: blue;">
-        <div class="row hero-text">
-            <h1>Itunes <span style="color: greenyellow;">Magic</span></h1>
-            <!-- <p>test</p> -->
-                <div id="songs">
-                    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+    <div class="container-fluid">
+        <div class="row text-center sh">
+            <div class="col-12 align-self-center">
+                <h1>Lets play some
+                    <span style="color: greenyellow;">Music</span>
+                </h1>
+
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                                    <button type="submit" class="btn btn-secondary" id="get-music-button">
+                                        <span style="color: black;">Search</span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
-
-
+                    </div>
                 </div>
-            
+                <!-- <p>test</p> -->
+            </div>
 
         </div>
-        <div class="row" style="background-color: green;">
+        <div class="col-12">
+            <div class="row" id="songs">
 
+
+            </div>
         </div>
+
+
 
 
     </div>
+
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>

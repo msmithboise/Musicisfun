@@ -1,27 +1,33 @@
 body, html {
     height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.26)),  url("https://img.buzzfeed.com/buzzfeed-static/static/2014-01/enhanced/webdr06/22/13/anigif_enhanced-buzz-31591-1390415811-33.gif?downsize=715:*&output-format=auto&output-quality=auto");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* The hero image */
 .hero-image {
 
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.26)),  url("https://img.buzzfeed.com/buzzfeed-static/static/2014-01/enhanced/webdr06/22/13/anigif_enhanced-buzz-31591-1390415811-33.gif?downsize=715:*&output-format=auto&output-quality=auto");
+   
 
     
     height: 100%;
 
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+    /* position: relative; */
+}
+
+.sh{
+    height: 100vh;
 }
 
 
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+  
