@@ -20,8 +20,7 @@ for (let i = 0; i < songList.length; i++) {
     <p><b>Album:</b> ${song.collection}</p>
     <p><b>Price:</b> ${song.price}</p>
     <img class="url" src="${song.albumArt}" alt="">
-    // <audio controls></audio><audio url="${song.preview}"></audio>
-    
+  
     <audio controls>
     <source src="${song.preview}" type="audio/ogg">
    
