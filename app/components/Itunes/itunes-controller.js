@@ -7,13 +7,13 @@ const itunesService = new ItunesService()
 function drawSongs(songList) {
   console.log(songList)
 
-let template = ''
+  let template = ''
 
-for (let i = 0; i < songList.length; i++) {
-  let song = songList[i];
-  template +=
+  for (let i = 0; i < songList.length; i++) {
+    let song = songList[i];
+    template +=
 
-  `
+      `
   <div>
     <p><b>Artist:</b> ${song.artist}</p>
     <p><b>Track:</b> ${song.title}</p>
@@ -30,18 +30,18 @@ for (let i = 0; i < songList.length; i++) {
     </div>
     
   `
-  
-}
-document.getElementById('songs').innerHTML = template
+
+  }
+  document.getElementById('songs').innerHTML = template
 }
 // console.log(songList)
-  
-  
-  
-  
-  
-  
-  //YOUR CODING STARTS HERE
+
+
+
+
+
+
+//YOUR CODING STARTS HERE
 // string template
 //get element by id
 //audio tags
