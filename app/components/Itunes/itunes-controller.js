@@ -14,9 +14,10 @@ function drawSongs(songList) {
     template +=
 
       `
-      <div class="wrapper col-3">
+      <div class="col-12">
+      <div class="row justify-content-center">
 
-      <div class="row scrolls">
+      <div class="col-4">
       
           <p>
               <b>Artist:</b> ${song.artist}</p>
@@ -34,6 +35,7 @@ function drawSongs(songList) {
           </audio>
       </div>
 
+  </div>
   </div>
     
   `

@@ -21,30 +21,33 @@
                     <span style="color: greenyellow;">Music</span>
                 </h1>
 
-                <div class="col-12">
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                                    <button type="submit" class="btn btn-secondary" id="get-music-button">
-                                        <span style="color: black;">Search</span>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                                <button type="submit" class="btn btn-secondary" id="get-music-button">
+                                    <span style="color: black;">Search</span>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <!-- <p>test</p> -->
             </div>
+            <!-- <div class="col-12 align-self-end text-white">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        yep
+                    </div>
+                </div>
+            </div> -->
+            <!-- <p>test</p> -->
 
         </div>
-        <div class="col-12">
-            <div class="row" id="songs">
+        <div class="row" id="songs">
 
 
-            </div>
         </div>
 
 
