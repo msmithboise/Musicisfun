@@ -17,7 +17,7 @@ function drawSongs(songList) {
       <div class="col-12">
       <div class="row justify-content-center">
 
-      <div class="col-4">
+      <div class="col-4 wrapper">
       
           <p>
               <b>Artist:</b> ${song.artist}</p>
